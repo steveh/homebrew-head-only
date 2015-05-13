@@ -2,7 +2,7 @@ class Rtop < Formula
   homepage "http://www.rtop-monitor.org/"
 
   head do
-    url "http://github.com/rapidloop/rtop.git"
+    url "https://github.com/rapidloop/rtop.git"
     depends_on "go" => :build
   end
 
@@ -12,6 +12,6 @@ class Rtop < Formula
   end
 
   test do
-    system "#{bin}/rtop"
+    system "#{bin}/rtop --version"
   end
 end
